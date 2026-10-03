@@ -1,7 +1,9 @@
 .venv/
+scripts/env.ps1
 third_party/
 work/
 out/
+docs/understanding.md
 __pycache__/
 .pytest_cache/
 *.py[cod]
@@ -9,3 +11,5 @@ __pycache__/
 *.pt
 *.mp4
 !samples/*.mp4
+.tmp/
+.pipcache/
