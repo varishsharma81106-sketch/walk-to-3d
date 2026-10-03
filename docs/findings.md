@@ -19,3 +19,10 @@
 
 - The shipped pipeline uses one DA3 window. Camera poses and the generated PLY have not been validated against a ground-truth scan.
 - The CUDA CLI path ran on one RTX 4050 Laptop GPU; the browser upload-to-reconstruction interaction remains unverified.
+
+## Official DA3 Sydney Opera House example
+
+- Ran the two bundled `SOH` example views at `process_res=504` on CUDA with DA3-BASE.
+- Depth and confidence shapes were `(2, 280, 504)`; extrinsics `(2, 3, 4)`; 282,240 points exported. Inference runtime was 9.96 s; all output arrays were finite.
+- Artifacts are under `out/soh-max`: `scene.ply`, `preview.png`, `camera_path.json`, and `stats.json`. The app uses this PLY as its initial interactive point-cloud scene when present.
+- This is a sparse colored point-cloud preview, not a watertight mesh or an accuracy-validated reconstruction.
