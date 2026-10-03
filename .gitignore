@@ -1,0 +1,11 @@
+.venv/
+third_party/
+work/
+out/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+*.safetensors
+*.pt
+*.mp4
+!samples/*.mp4
